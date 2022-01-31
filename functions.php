@@ -23,4 +23,8 @@ function temazo_config()
 
 add_action("after_setup_theme", "temazo_config", 0);
 
-
+function register_navwalker()
+{
+    require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker';
+}
+add_action('after_setup_theme', 'register_navwalker');
