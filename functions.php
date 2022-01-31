@@ -1,6 +1,8 @@
 <?php
 
 // Esta función hace...
+require_once get_template_directory() . 'inc/class-wp-bootstrap-navwalker.php';
+
 function temazo_scripts()
 {
     wp_enqueue_style( "bootstrap_css", get_theme_file_uri("inc/css/bootstrap.min.css"), array(), "5.1", "all");
